@@ -48,7 +48,7 @@
         echo '</script>';
         // <meta http-equiv="refresh" content="3;url=http://www.ireallyhost.com">
         // echo "<meta http-equiv=\"refresh\" content=\"3;URL=http://www.google.com/\" />";
-        echo "<meta http-equiv=\"refresh\" content=\"10;URL=".$dest."\" />";
+        echo "<meta http-equiv=\"refresh\" content=\"12;URL=".$dest."\" />";
         
     }
 ?>
