@@ -9,7 +9,8 @@
     $API->debug = false;
 
     // if ($API->connect('192.168.55.1','cattelecom','nopochO2018')) {
-    if ($API->connect('192.168.77.1','nopochO','nopochO2018')) {
+    if ($API->connect('574b05dbebf3.sn.mynetname.net','nopochO','nopochO2018')) {
+    // if ($API->connect('192.168.77.1','nopochO','nopochO2018')) {
     // type1 (forEach --ข้อมูลเป็นตารางคล้าย excel)
         $array_type_1 = $API->comm('/ip/address/print');
         echo "<br><br>"."Result 1"."<br><br>";
