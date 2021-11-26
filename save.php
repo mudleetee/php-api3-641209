@@ -1,6 +1,6 @@
 <?php
     echo '<pre>';
-    print_r($_POST);
+    // print_r($_POST);
     echo '</pre>';
     echo '<hr>';
     // var_dump($_POST);
@@ -8,17 +8,19 @@
     echo '<br>';
     // $uname = $_POST["username"];
     // $pwd = $_POST["password"];
-    print "<p><b>Method POST</b><br />";
+
+    // print "<p><b>Method POST</b><br />";
+
     if(isset($_POST['username']))       $uname      = $_POST['username'];
     if(isset($_POST['password']))       $pwd        = $_POST['password'];
     if(isset($_POST['mac']))            $my_mc      = $_POST['mac'];
     if(isset($_POST['dst']))            $dest       = $_POST['dst'];
 
     
-    echo "username              : <b>".$uname."</b><br>";
-    echo "password              : <b>".$pwd."</b><br>";
-    echo "MAC Address           : <b>".$my_mc."</b><br>";
-    echo "destination           : <b>".$dest ."</b><br>";
+    // echo "username              : <b>".$uname."</b><br>";
+    // echo "password              : <b>".$pwd."</b><br>";
+    // echo "MAC Address           : <b>".$my_mc."</b><br>";
+    // echo "destination           : <b>".$dest ."</b><br>";
 
 
     
