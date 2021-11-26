@@ -2,10 +2,10 @@
     echo '<pre>';
     // print_r($_POST);
     echo '</pre>';
-    echo '<hr>';
+    // echo '<hr>';
     // var_dump($_POST);
-    echo '<hr>';
-    echo '<br>';
+    // echo '<hr>';
+    // echo '<br>';
     // $uname = $_POST["username"];
     // $pwd = $_POST["password"];
 
