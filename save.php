@@ -1,6 +1,6 @@
 <?php
     echo '<pre>';
-    // print_r($_POST);
+    print_r($_POST);
     echo '</pre>';
     // echo '<hr>';
     // var_dump($_POST);
@@ -15,6 +15,10 @@
     if(isset($_POST['password']))       $pwd        = $_POST['password'];
     if(isset($_POST['mac']))            $my_mc      = $_POST['mac'];
     if(isset($_POST['dst']))            $dest       = $_POST['dst'];
+    if(isset($_POST['idcard']))         $idcard     = $_POST['idcard'];
+    if(isset($_POST['phone']))          $phone      = $_POST['phone'];
+    $ment = $idcard . "--" . $phone ;
+
 
     
     // echo "username              : <b>".$uname."</b><br>";
@@ -36,15 +40,17 @@
     // $API->debug = true;
     $API->debug = false;
 
-    // if ($API->connect('192.168.55.1','cattelecom','nopochO2018')) {
-    if ($API->connect('574b05dbebf3.sn.mynetname.net','nopochO','nopochO2018')) {
+    if ($API->connect('192.168.253.1','cattelecom','nopochO2018')) {
+    // if ($API->connect('574b05dbebf3.sn.mynetname.net','nopochO','nopochO2018')) {
     // if ($API->connect('192.168.77.1','nopochO','nopochO2018')) {
         
         // print "MAC Address= $my_mc<br />";
         // $my_mc = "00:4E:01:99:0D:8B";
         $API->write("/ip/hotspot/user/add",false);
         $API->write("=name=$my_mc",false);
-        $API->write("=profile=mac");
+        // $API->write("=profile=mac");
+        $API->write("=profile=mac",false);
+        $API->write("=comment=$ment");
         $API->read();
 
         // echo '<script language="javascript">';
@@ -53,7 +59,7 @@
 
         // <meta http-equiv="refresh" content="3;url=http://www.ireallyhost.com">
         // echo "<meta http-equiv=\"refresh\" content=\"3;URL=http://www.google.com/\" />";
-        echo "<meta http-equiv=\"refresh\" content=\"1;URL=".$dest."\" />";
+        echo "<meta http-equiv=\"refresh\" content=\"3;URL=".$dest."\" />";
         
     }
 ?>
