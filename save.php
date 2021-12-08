@@ -40,12 +40,13 @@
     // $API->debug = true;
     $API->debug = false;
 
-    if ($API->connect('192.168.253.1','cattelecom','nopochO2018')) {
+    // if ($API->connect('192.168.253.1','cattelecom','nopochO2018')) {
+    if ($API->connect('d52f0e3fcba1.sn.mynetname.net','cattelecom','nopochO2018')) {
     // if ($API->connect('574b05dbebf3.sn.mynetname.net','nopochO','nopochO2018')) {
     // if ($API->connect('192.168.77.1','nopochO','nopochO2018')) {
         
         // print "MAC Address= $my_mc<br />";
-        // $my_mc = "00:4E:01:99:0D:8B";
+        // $my_mc = "00:4E:01:99:0D:8B";    
         $API->write("/ip/hotspot/user/add",false);
         $API->write("=name=$my_mc",false);
         // $API->write("=profile=mac");
