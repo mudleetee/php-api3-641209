@@ -17,7 +17,7 @@
     if(isset($_POST['dst']))            $dest       = $_POST['dst'];
     if(isset($_POST['idcard']))         $idcard     = $_POST['idcard'];
     if(isset($_POST['phone']))          $phone      = $_POST['phone'];
-    $ment = $idcard . "--" . $phone ;
+    $ment = $idcard . "@" . $phone ;
 
 
     
@@ -41,8 +41,8 @@
     $API->debug = false;
 
     // if ($API->connect('192.168.253.1','cattelecom','nopochO2018')) {
-    if ($API->connect('d52f0e3fcba1.sn.mynetname.net','cattelecom','nopochO2018')) {
-    // if ($API->connect('574b05dbebf3.sn.mynetname.net','nopochO','nopochO2018')) {
+    // if ($API->connect('d52f0e3fcba1.sn.mynetname.net','cattelecom','nopochO2018')) {
+    if ($API->connect('574b05dbebf3.sn.mynetname.net','nopochO','nopochO2018')) {
     // if ($API->connect('192.168.77.1','nopochO','nopochO2018')) {
         
         // print "MAC Address= $my_mc<br />";
@@ -60,7 +60,7 @@
 
         // <meta http-equiv="refresh" content="3;url=http://www.ireallyhost.com">
         // echo "<meta http-equiv=\"refresh\" content=\"3;URL=http://www.google.com/\" />";
-        echo "<meta http-equiv=\"refresh\" content=\"3;URL=".$dest."\" />";
+        echo "<meta http-equiv=\"refresh\" content=\"1;URL=".$dest."\" />";
         
     }
 ?>
