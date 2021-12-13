@@ -22,6 +22,7 @@
 
     $ccr_office_ddns = "574b05dbebf3.sn.mynetname.net";
     $mt_skm_amnaj_ddns = "554f040ec530.sn.mynetname.net";
+    $mt_bangchakreng_ddns = "63fb051ac0ab.sn.mynetname.net";
 
     switch ($iden_new) {
       case "ccr_office":
@@ -30,7 +31,7 @@
         $p = "nopochO2018";
         break;
       case "bangjakreng":
-        $mt = $mt_skm_amnaj_ddns;
+        $mt = $mt_bangchakreng_ddns;
         $u = "3471j0005";
         $p = "3471j0005";
         break;
