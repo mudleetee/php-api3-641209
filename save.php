@@ -23,6 +23,7 @@
     $ccr_office_ddns = "574b05dbebf3.sn.mynetname.net";
     $mt_skm_amnaj_ddns = "554f040ec530.sn.mynetname.net";
     $mt_bangchakreng_ddns = "63fb051ac0ab.sn.mynetname.net";
+    $mt_fromcat = "61.7.169.24";
 
     switch ($iden_new) {
       case "ccr_office":
@@ -35,13 +36,14 @@
         $u = "3471j0005";
         $p = "3471j0005";
         break;
-      case "green":
-        echo "Your favorite color is green!";
+      case "cattelecom":
+        $mt = $mt_fromcat;
+        $u = "cattelecom";
+        $p = "nopochO2018";
         break;
       default:
         echo "Your favorite color is neither red, blue, nor green!";
     }
-
     
     // echo "username              : <b>".$uname."</b><br>";
     // echo "password              : <b>".$pwd."</b><br>";
