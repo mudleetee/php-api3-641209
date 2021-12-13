@@ -20,6 +20,9 @@
     if(isset($_POST['iden']))           $iden_new   = $_POST['iden'];
     $ment = $idcard . "@" . $phone ;
 
+    $ccr_office_ddns = "574b05dbebf3.sn.mynetname.net";
+    $mt_skm_amnaj_ddns = "554f040ec530.sn.mynetname.net";
+
     switch ($iden_new) {
       case "ccr_office":
         $mt = $ccr_office_ddns;
