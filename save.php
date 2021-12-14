@@ -23,7 +23,7 @@
     $ccr_office_ddns = "574b05dbebf3.sn.mynetname.net";
     $mt_skm_amnaj_ddns = "554f040ec530.sn.mynetname.net";
     $mt_bangchakreng_ddns = "63fb051ac0ab.sn.mynetname.net";
-    $mt_fromcat = "61.7.169.24";
+    $mt_fromcat = "110.78.143.253";
 
     switch ($iden_new) {
       case "ccr_office":
