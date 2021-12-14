@@ -17,9 +17,33 @@
     if(isset($_POST['dst']))            $dest       = $_POST['dst'];
     if(isset($_POST['idcard']))         $idcard     = $_POST['idcard'];
     if(isset($_POST['phone']))          $phone      = $_POST['phone'];
+    if(isset($_POST['iden']))           $iden_new   = $_POST['iden'];
     $ment = $idcard . "@" . $phone ;
 
+    $ccr_office_ddns = "574b05dbebf3.sn.mynetname.net";
+    $mt_skm_amnaj_ddns = "554f040ec530.sn.mynetname.net";
+    $mt_bangchakreng_ddns = "63fb051ac0ab.sn.mynetname.net";
+    $mt_fromcat = "61.7.169.24";
 
+    switch ($iden_new) {
+      case "ccr_office":
+        $mt = $ccr_office_ddns;
+        $u = "nopochO";
+        $p = "nopochO2018";
+        break;
+      case "bangjakreng":
+        $mt = $mt_bangchakreng_ddns;
+        $u = "3471j0005";
+        $p = "3471j0005";
+        break;
+      case "cattelecom":
+        $mt = $mt_fromcat;
+        $u = "cattelecom";
+        $p = "nopochO2018";
+        break;
+      default:
+        echo "Your favorite color is neither red, blue, nor green!";
+    }
     
     // echo "username              : <b>".$uname."</b><br>";
     // echo "password              : <b>".$pwd."</b><br>";
@@ -39,12 +63,8 @@
     $API = new routeros_api();
     // $API->debug = true;
     $API->debug = false;
-
-    // if ($API->connect('192.168.253.1','cattelecom','nopochO2018')) {
-    // if ($API->connect('d52f0e3fcba1.sn.mynetname.net','cattelecom','nopochO2018')) {
-    if ($API->connect('574b05dbebf3.sn.mynetname.net','nopochO','nopochO2018')) {
-    // if ($API->connect('192.168.77.1','nopochO','nopochO2018')) {
-        
+    if ($API->connect($mt,$u,$p)) { 
+    // if ($API->connect('574b05dbebf3.sn.mynetname.net','nopochO','nopochO2018')) {      
         // print "MAC Address= $my_mc<br />";
         // $my_mc = "00:4E:01:99:0D:8B";    
         $API->write("/ip/hotspot/user/add",false);
