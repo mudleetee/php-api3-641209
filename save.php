@@ -94,7 +94,7 @@
 <form name="login" action="http://nt.wifi/login02.html" method="post">
     <!-- <input type="text" name="username" value="demo">
     <input type="password" name="password" value="none"> -->
-    <input type="hidden" name="mac" value="$(my_mc)">
+    <input type="hidden" name="username" value="<?php $($my_mc) ?>">
     <input type="hidden" name="domain" value="">
     <input type="hidden" name="dst" value="http://www.mikrotik.com/">
     <input type="submit" name="login" value="log in">
