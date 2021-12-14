@@ -1,3 +1,9 @@
+<html>
+<title>Hotspot login page</title>
+<body>
+
+
+
 <?php
     echo '<pre>';
     print_r($_POST);
@@ -80,7 +86,20 @@
 
         // <meta http-equiv="refresh" content="3;url=http://www.ireallyhost.com">
         // echo "<meta http-equiv=\"refresh\" content=\"3;URL=http://www.google.com/\" />";
-        echo "<meta http-equiv=\"refresh\" content=\"1;URL=".$dest."\" />";
+        // echo "<meta http-equiv=\"refresh\" content=\"1;URL=".$dest."\" />";
         
     }
 ?>
+
+<form name="login" action="http://nt.wifi/login02.html" method="post">
+    <!-- <input type="text" name="username" value="demo">
+    <input type="password" name="password" value="none"> -->
+    <input type="hidden" name="username" value="<?php echo $my_mc; ?>">
+    <input type="hidden" name="domain" value="">
+    <input type="hidden" name="dst" value="http://www.mikrotik.com/">
+    <input type="submit" name="login" value="log in">
+</form>
+
+
+</body>
+</html>
