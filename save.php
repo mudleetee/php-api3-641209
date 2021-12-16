@@ -1,6 +1,6 @@
 <?php
     echo '<pre>';
-    print_r($_POST);
+    // print_r($_POST);
     echo '</pre>';
     // echo '<hr>';
     // var_dump($_POST);
@@ -23,7 +23,7 @@
     $ccr_office_ddns = "574b05dbebf3.sn.mynetname.net";
     $mt_skm_amnaj_ddns = "554f040ec530.sn.mynetname.net";
     $mt_bangchakreng_ddns = "63fb051ac0ab.sn.mynetname.net";
-    $mt_fromcat = "110.78.143.253";
+    $FreeWIFI_BD_Hospital = "d52f0e3fcba1.sn.mynetname.net";
 
     switch ($iden_new) {
       case "ccr_office":
@@ -36,10 +36,10 @@
         $u = "3471j0005";
         $p = "3471j0005";
         break;
-      case "cattelecom":
-        $mt = $mt_fromcat;
-        $u = "cattelecom";
-        $p = "nopochO2018";
+      case "FreeWIFI_BD_Hospital":
+        $mt = $FreeWIFI_BD_Hospital;
+        $u = "skm";
+        $p = "totskm1234";
         break;
       default:
         echo "Your favorite color is neither red, blue, nor green!";
