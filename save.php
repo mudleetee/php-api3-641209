@@ -23,6 +23,7 @@
     $ccr_office_ddns = "574b05dbebf3.sn.mynetname.net";
     $mt_skm_amnaj_ddns = "554f040ec530.sn.mynetname.net";
     $mt_bangchakreng_ddns = "63fb051ac0ab.sn.mynetname.net";
+    $obt_saunlaung_ddns = "aa.sn.mynetname.net"; 
     $freewifi_vaccine_obj_ddns = "d52f0e3fcba1.sn.mynetname.net"; 
 
     switch ($iden_new) {
@@ -30,6 +31,11 @@
         $mt = $ccr_office_ddns;
         $u = "nopochO";
         $p = "nopochO2018";
+        break;
+      case "obt_saunlaung":
+        $mt = $obt_saunlaung_ddns;
+        $u = "tot_3475L0016";
+        $p = "tot_3475L0016";
         break;
       case "bangjakreng":
         $mt = $mt_bangchakreng_ddns;
