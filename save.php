@@ -24,7 +24,8 @@
     $mt_skm_amnaj_ddns = "554f040ec530.sn.mynetname.net";
     $mt_bangchakreng_ddns = "63fb051ac0ab.sn.mynetname.net";
     $obt_saunlaung_ddns = "8eee0ae75a8f.sn.mynetname.net"; 
-    $freewifi_vaccine_obj_ddns = "d52f0e3fcba1.sn.mynetname.net"; 
+    $freewifi_vaccine_obj_ddns = "d52f0e3fcba1.sn.mynetname.net";
+    $pwa_ddns = "5e6b04782a49.sn.mynetname.net";  
 
     switch ($iden_new) {
       case "ccr_office":
@@ -46,6 +47,11 @@
         $mt = $freewifi_vaccine_obj_ddns;
         $u = "skm";
         $p = "totskm1234";
+        break;
+       case "PWA-WiFi":
+        $mt = $pwa_ddns;
+        $u = "skm";
+        $p = "ntskm";
         break;
       default:
         echo "Your favorite color is neither red, blue, nor green!";
