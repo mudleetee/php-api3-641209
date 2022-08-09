@@ -1,0 +1,23 @@
+echo "# php-api3-641209" >> README.md
+git init
+git add README.md		
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mudleetee/php-api3-641209.git		---add new 
+git remote set-url origin https://github.com/mudleetee/php-api3-641209.git		---เปลี่ยน remote เป็นค่าใหม่
+git push -u origin main
+
+
+
+git init
+git status
+git add .
+git status
+git commit -m "first commit"
+git branch -M main
+git remote -v
+git push -u origin main
+
+
+
+git remote -v  	--เพื่อเช็คดูว่าเราติดต่อกับ git ตัวไหน 
