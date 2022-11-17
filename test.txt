@@ -21,3 +21,4 @@ git push -u origin main
 
 
 git remote -v  	--เพื่อเช็คดูว่าเราติดต่อกับ git ตัวไหน 
+555
